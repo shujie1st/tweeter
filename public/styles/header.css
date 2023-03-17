@@ -1,0 +1,20 @@
+header {
+  height: 520px;
+  width: 100%;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: goldenrod;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+.normal {
+  font-weight: normal;
+}
+
+header h2 {
+  margin-top: 0;
+  font-size: 1.8em;
+}
