@@ -1,0 +1,30 @@
+nav {
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+nav > span {
+  font-family: "Bungee", sans-serif;
+  font-size: 42px;
+ }
+
+ nav > div {
+  font-size: 22px;
+  text-align: center;
+ }
+
+ .bold {
+  font-weight: bold;
+ }
+
+ nav i {
+  color: red;
+ }
