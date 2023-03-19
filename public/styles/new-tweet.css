@@ -1,0 +1,40 @@
+section.new-tweet label {
+  display: block;
+  color: dimgray;
+  font-weight: bolder;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+textarea#tweet-text {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 4px solid dimgray;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+section.new-tweet div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+section.new-tweet button {
+  background-color: #4056A1;
+  border: none;
+  color: white;
+  font-family: "Bungee", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+
+
+}
+
+section.new-tweet output {
+  font-weight: 900;
+}
