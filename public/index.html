@@ -24,6 +24,8 @@
 
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+    <link rel="stylesheet" href="/styles/the-tweets.css" type="text/css" />
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -48,7 +50,7 @@
       </div>
     </nav>
 
-    <header>
+    <header class="user">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -71,6 +73,27 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+
+      <section id="the-tweets">
+        <article>
+          <header>
+            <div>
+              <i class="fa-regular fa-user"></i>
+              <span class="name">Rhoda Jacobs</span>
+            </div>
+            <div class="right-div">@MrsJacobs</div>
+          </header>
+          <p>Hello World!</p>
+          <footer>
+            <span>10 days ago</span>
+            <div class="icon">
+              <i class="fa-sharp fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-sharp fa-solid fa-heart"></i>
+            </div>
+          </footer>
+        </article>
       </section>
     </main>
   </body>

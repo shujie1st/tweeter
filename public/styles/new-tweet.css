@@ -35,6 +35,7 @@ section.new-tweet button {
 
 section.new-tweet output {
   font-weight: 900;
+  font-family: "Bungee", sans-serif;
 }
 
 .red {
