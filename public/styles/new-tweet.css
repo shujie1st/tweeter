@@ -31,10 +31,12 @@ section.new-tweet button {
   font-weight: bold;
   padding-left: 0.5em;
   padding-right: 0.5em;
-
-
 }
 
 section.new-tweet output {
   font-weight: 900;
+}
+
+.red {
+  color: red;
 }
