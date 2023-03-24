@@ -67,3 +67,16 @@ return $tweet;
 $(document).ready(function() {
   renderTweets(data);
 });
+
+// form submission using JQuery
+$(document).ready(function() {
+  $("form").submit((event) => {
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "/tweets/",
+      data: $("form").serialize(),
+      error: (err) => console.error(err)
+    }) 
+  })
+});
