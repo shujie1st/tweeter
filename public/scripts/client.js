@@ -4,10 +4,11 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+// loops through tweets
+// calls createTweetElement for each tweet
+// takes return value and appends it to the tweets container
 const renderTweets = function(tweets) {
-  // loops through tweets
-  // calls createTweetElement for each tweet
-  // takes return value and appends it to the tweets container
+  $("#the-tweets").empty(); // clear the container everytime before appending the tweets
   for (const tweet of tweets) {
     $("#the-tweets").append(createTweetElement(tweet));
   }
@@ -49,6 +50,8 @@ const loadTweets = function() {
 };
 
 $(document).ready(function() {
+  loadTweets();
+  
 // form submission using JQuery
 $("form").submit((event) => {
     event.preventDefault();
@@ -69,10 +72,9 @@ $("form").submit((event) => {
       type: "POST",
       url: "/tweets/",
       data: $("form").serialize(),
+      success: () => loadTweets(), // refetch tweets on submission
       error: (err) => console.error(err)
     }) 
   });
-
-  loadTweets();
 });
 
