@@ -14,6 +14,13 @@ const renderTweets = function(tweets) {
   }
 };
 
+// escape function to use with input text to prevent Cross-Site Scripting
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 //Function to generate the DOM structure for a given tweet object
 const createTweetElement = function(tweet) {
   let $tweet = $(`
@@ -25,7 +32,7 @@ const createTweetElement = function(tweet) {
     </div>
     <div class="right-div">${tweet.user.handle}</div>
   </header>
-  <p>${tweet.content.text}</p>
+  <p>${escape(tweet.content.text)}</p>
   <footer>
     <span>${timeago.format(tweet.created_at)}</span>
     <div class="icon">
@@ -51,7 +58,7 @@ const loadTweets = function() {
 
 $(document).ready(function() {
   loadTweets();
-  
+
 // form submission using JQuery
 $("form").submit((event) => {
     event.preventDefault();
