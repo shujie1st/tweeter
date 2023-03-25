@@ -38,7 +38,7 @@ const createTweetElement = function(tweet) {
 return $tweet;
 }
 
-// use AJAX to fetch tweets from the server
+// Function using AJAX to fetch tweets from the server
 const loadTweets = function() {
   $.ajax({
     type: "GET",
@@ -52,6 +52,19 @@ $(document).ready(function() {
 // form submission using JQuery
 $("form").submit((event) => {
     event.preventDefault();
+
+    // Validate message length before sending the form data to the server
+    // Return error message if empty tweet or exceeds the 140 character limit
+    let length = $("#tweet-text").val().length;
+    if (length === 0) {
+      alert("Can't send empty message!")
+      return;
+    } else if (length > 140) {
+      alert("You've exceeded the 140 character limit!");
+      return;
+    }
+
+    // use AJAX to send the serialized data to the server
     $.ajax({
       type: "POST",
       url: "/tweets/",
