@@ -8,6 +8,10 @@
   margin-bottom: 2em;
 }
 
+#the-tweets article:hover {
+  box-shadow: 8px 8px lightsteelblue; 
+}
+
 #the-tweets header {
   display: flex;
   justify-content: space-between;
@@ -43,10 +47,6 @@ div.icon i {
   color: #4056A1;
   padding-left: 0.3em;
   padding-right: 0.3em;
-}
-
-#the-tweets article:hover {
-  box-shadow: 8px 8px lightsteelblue; 
 }
 
 div.icon i:hover {

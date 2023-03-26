@@ -65,12 +65,16 @@ $("form").submit((event) => {
 
     // Validate message length before sending the form data to the server
     // Return error message if empty tweet or exceeds the 140 character limit
+    // When user submits a new tweet, the error message will slide out of view before validation
+    $("#error").slideUp(500, function () {
     let length = $("#tweet-text").val().length;
     if (length === 0) {
-      alert("Can't send empty message!")
+      $("#error span").html("Can't send empty message!");
+      $("#error").slideDown(500);
       return;
     } else if (length > 140) {
-      alert("You've exceeded the 140 character limit!");
+      $("#error span").html("You've exceeded the 140 character limit!");
+      $("#error").slideDown(500);
       return;
     }
 
@@ -81,7 +85,8 @@ $("form").submit((event) => {
       data: $("form").serialize(),
       success: () => loadTweets(), // refetch tweets on submission
       error: (err) => console.error(err)
-    }) 
+    })
+   }); 
   });
 });
 

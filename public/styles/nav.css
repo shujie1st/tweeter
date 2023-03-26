@@ -22,10 +22,10 @@ nav > span {
   text-align: center;
  }
 
- .bold {
-  font-weight: bold;
- }
-
  nav i {
   color: red;
+ }
+
+ .bold {
+  font-weight: bold;
  }
