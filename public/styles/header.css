@@ -6,6 +6,7 @@ header.user {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  margin-bottom: 1em;
   background-color: goldenrod;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
