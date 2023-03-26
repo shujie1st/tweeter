@@ -59,6 +59,11 @@ const loadTweets = function() {
 $(document).ready(function() {
   loadTweets();
 
+  $("nav button").click(function() {
+    $("section.new-tweet").slideToggle();
+    $("#tweet-text").focus();
+  });
+
 // form submission using JQuery
 $("form").submit((event) => {
     event.preventDefault();
