@@ -1,0 +1,14 @@
+#scroll-to-top {
+  color: white;
+  font-size: 30px;
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  right: 20px;
+  bottom: 20px;
+  position: fixed;
+  cursor: pointer;
+  display: none;
+}
