@@ -25,6 +25,7 @@ section.new-tweet button {
   font-weight: bold;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  cursor: pointer;
 }
 
 section.new-tweet output {

@@ -16,7 +16,6 @@ nav button {
   background-color: transparent;
   border: none;
   color:#FFFFFF;
-  padding:0.5em;
   cursor: pointer;
 }
 
@@ -24,19 +23,14 @@ nav button:hover {
   text-shadow: 2px 2px 4px black;
 }
 
-
 nav > span {
   font-family: "Bungee", sans-serif;
   font-size: 42px;
  }
 
- nav > div {
-  font-size: 22px;
-  text-align: center;
- }
-
  nav i {
   color: red;
+  font-size: 20px;
  }
 
  .bold {
