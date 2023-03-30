@@ -72,32 +72,31 @@ $("form").submit((event) => {
     // Return error message if empty tweet or exceeds the 140 character limit
     // When user submits a new tweet, the error message will slide out of view before validation
     $("#error").slideUp(500, function () {
-    let length = $("#tweet-text").val().length;
-    if (length === 0) {
-      $("#error span").html("Can't send empty message!");
-      $("#error").slideDown(500);
-      return;
-    } else if (length > 140) {
-      $("#error span").html("You've exceeded the 140 character limit!");
-      $("#error").slideDown(500);
-      return;
-    }
-
-    // use AJAX to send the serialized data to the server
-    $.ajax({
-      type: "POST",
-      url: "/tweets/",
-      data: $("form").serialize(),
-      success: () => {
-        loadTweets(); // refetch tweets on submission
-        $("#tweet-text").val("").trigger("input"); // clear textarea and recount characters after user submits form 
-      },
-      error: (err) => {
-        console.error(err);
-        $("#error span").html("Send tweet failed!");
+      if ($("#tweet-text").val().trim().length === 0) {
+        $("#error span").html("Can't send empty message!");
         $("#error").slideDown(500);
+        return;
+      } else if ($("#tweet-text").val().length > 140) {
+        $("#error span").html("You've exceeded the 140 character limit!");
+        $("#error").slideDown(500);
+        return;
       }
-    })
+
+      // use AJAX to send the serialized data to the server
+      $.ajax({
+        type: "POST",
+        url: "/tweets/",
+        data: $("form").serialize(),
+        success: () => {
+          loadTweets(); // refetch tweets on submission
+          $("#tweet-text").val("").trigger("input"); // clear textarea and recount characters after user submits form 
+        },
+        error: (err) => {
+          console.error(err);
+          $("#error span").html("Send tweet failed!");
+          $("#error").slideDown(500);
+        }
+      })
    }); 
   });
 });
