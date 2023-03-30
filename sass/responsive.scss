@@ -2,9 +2,11 @@
   body {
     flex-direction: row;
   }
+
   nav {
     background-color: #4056A1;
   }
+
   header.user {
     height: 400px;
     width: 35%;
@@ -13,10 +15,11 @@
     margin-right: 4%;
     justify-content: center;
   }
+  
   main.container {
     width: 65%;
     margin-top: 165px;
     margin-left: 4%;
     margin-right: 3%;
   }
-}
+ }

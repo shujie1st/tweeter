@@ -6,7 +6,6 @@
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,6 +13,7 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
   color: #545149;
   background-color: #f4f1ec;
@@ -23,13 +23,14 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-body {
+ body {
   font-family: "Source Sans Pro", sans-serif;
   display: flex;
   flex-direction: column;
-}
+ }
 
-main.container {
+ main.container {
   width: 90%;
   align-self: center;
-}
+ }
+
