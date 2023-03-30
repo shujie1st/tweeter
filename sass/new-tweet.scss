@@ -1,4 +1,5 @@
 @use "variables";
+@use "mixins";
 
 section.new-tweet {
   margin-top: 0.5em;
@@ -46,8 +47,7 @@ section.new-tweet {
 }
 
 #submit {
-  display: flex;
-  justify-content: space-between;
+  @include mixins.space-between;
 }
 
 .red {
@@ -59,8 +59,7 @@ section.new-tweet {
 }
 
 #error-message {
-  display: flex;
-  justify-content: flex-start;
+  @include mixins.flex-start;
   border: 4px solid variables.$red;
   padding: 0.5em;
   margin-bottom: 2em;

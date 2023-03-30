@@ -1,13 +1,13 @@
 @use "variables";
+@use "mixins";
 
 header.user {
   height: 520px;
   width: 100%;
   color: variables.$white;
-  display: flex;
+  @include mixins.align-center;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
   margin-bottom: 1em;
   background-color: variables.$header-color;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
