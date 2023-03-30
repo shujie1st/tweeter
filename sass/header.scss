@@ -11,11 +11,11 @@ header.user {
   margin-bottom: 1em;
   background-color: variables.$header-color;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-}
-
-header.user h2 {
-  margin-top: 10px;
-  font-size: 1.8em;
+  
+  h2 {
+    margin-top: 10px;
+    font-size: 1.8em;
+  }
 }
 
 .normal {

@@ -3,36 +3,36 @@
 section.new-tweet {
   margin-top: 0.5em;
   display: none;
-}
 
-section.new-tweet label {
-  display: block;
-  color: variables.$border-color;
-  font-weight: bolder;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
+  label {
+    display: block;
+    color: variables.$border-color;
+    font-weight: bolder;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
 
-section.new-tweet div {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
+  div {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
 
-section.new-tweet button {
-  background-color: variables.$nav-color;
-  border: none;
-  color: variables.$white;
-  font-family: variables.$tweet-font;
-  font-size: 20px;
-  font-weight: bold;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  cursor: pointer;
-}
+  button {
+    background-color: variables.$nav-color;
+    border: none;
+    color: variables.$white;
+    font-family: variables.$tweet-font;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    cursor: pointer;
+  }
 
-section.new-tweet output {
-  font-weight: 900;
-  font-family: variables.$tweet-font;
+  output {
+    font-weight: 900;
+    font-family: variables.$tweet-font;
+  }
 }
 
 #tweet-text {
@@ -65,9 +65,9 @@ section.new-tweet output {
   padding: 0.5em;
   margin-bottom: 2em;
   color: variables.$red;
-}
 
-#error-message i {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  i {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
 }
