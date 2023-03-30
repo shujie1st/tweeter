@@ -1,7 +1,9 @@
+@use "variables";
+
 #scroll-to-top {
-  color: white;
+  color: variables.$white;
   font-size: 30px;
-  background-color: red;
+  background-color: variables.$red;
   border: none;
   border-radius: 50%;
   height: 70px;

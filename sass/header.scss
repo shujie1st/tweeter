@@ -1,13 +1,15 @@
+@use "variables";
+
 header.user {
   height: 520px;
   width: 100%;
-  color: #FFFFFF;
+  color: variables.$white;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 1em;
-  background-color: goldenrod;
+  background-color: variables.$header-color;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 

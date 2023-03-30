@@ -1,5 +1,7 @@
+@use "variables";
+
 #the-tweets article {
-  border: 4px solid dimgray;
+  border: 4px solid variables.$border-color;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   padding-left: 0.5em;
@@ -9,7 +11,7 @@
 }
 
 #the-tweets article:hover {
-  box-shadow: 8px 8px lightsteelblue; 
+  box-shadow: 8px 8px variables.$shadow-color; 
 }
 
 #the-tweets header {
@@ -24,7 +26,7 @@
 }
 
 #the-tweets div.right-div {
-  color: lightsteelblue;
+  color: variables.$shadow-color;
   font-weight: 600;
 }
 
@@ -34,7 +36,7 @@
 }
 
 #the-tweets footer {
-  border-top: 4px solid dimgray;
+  border-top: 4px solid variables.$border-color;
   padding-top: 0.5em;
   padding-left: 0.8em;
   padding-right: 0.8em;
@@ -44,11 +46,11 @@
 }
 
 div.icon i {
-  color: #4056A1;
+  color: variables.$nav-color;
   padding-left: 0.3em;
   padding-right: 0.3em;
 }
 
 div.icon i:hover {
-  color: darkgoldenrod;
+  color: variables.$header-color;
 }

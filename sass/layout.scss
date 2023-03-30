@@ -1,3 +1,5 @@
+@use "variables";
+
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
@@ -24,7 +26,7 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
  body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: variables.$body-font;
   display: flex;
   flex-direction: column;
  }

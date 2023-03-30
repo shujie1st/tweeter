@@ -1,9 +1,11 @@
+@use "variables";
+
 nav {
   position: fixed;
   height: 120px;
   width: 100%;
-  background-color: transparent;
-  color: #FFFFFF;
+  background-color: variables.$background-color;
+  color: variables.$white;
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-bottom: 0.8em;
@@ -13,9 +15,9 @@ nav {
 }
 
 nav button {
-  background-color: transparent;
+  background-color: variables.$background-color;
   border: none;
-  color:#FFFFFF;
+  color: variables.$white;
   cursor: pointer;
 }
 
@@ -24,12 +26,12 @@ nav button:hover {
 }
 
 nav > span {
-  font-family: "Bungee", sans-serif;
+  font-family: variables.$tweet-font;
   font-size: 42px;
  }
 
  nav i {
-  color: red;
+  color: variables.$red;
   font-size: 20px;
  }
 
