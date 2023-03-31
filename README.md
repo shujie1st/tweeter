@@ -28,7 +28,7 @@ This project is built on the [Tweeter](https://github.com/lighthouse-labs/tweete
 ### Responsive design for screen width below 1024px
 !["responsive design"](/docs/responsive.png)
 
-### Use the toggle button in the bottom right corner to scroll back to top.
+### Use the toggle button in the bottom right corner to scroll back to top
 !["scroll-to-top"](/docs/scroll-to-top.png)
 
 
