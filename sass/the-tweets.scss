@@ -18,8 +18,15 @@
 
   header {
     @include mixins.space-between;
+    align-items: center;
     padding-left: 0.5em;
     padding-right: 0.5em;
+    div {
+      &:first-child {
+        display: flex;
+        align-items: center;
+      }
+    }
   }
 
   span.name {

@@ -7,32 +7,31 @@
   margin-top: 2em;
   margin-bottom: 2em;
 }
-
 #the-tweets article:hover {
   box-shadow: 8px 8px lightsteelblue;
 }
-
 #the-tweets header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
-
+#the-tweets header div:first-child {
+  display: flex;
+  align-items: center;
+}
 #the-tweets span.name {
   margin-left: 0.3em;
 }
-
 #the-tweets div.right-div {
   color: lightsteelblue;
   font-weight: 600;
 }
-
 #the-tweets p {
   padding: 0.5em;
   font-weight: 600;
 }
-
 #the-tweets footer {
   border-top: 4px solid dimgray;
   padding-top: 0.5em;
@@ -48,7 +47,6 @@ div.icon i {
   padding-left: 0.3em;
   padding-right: 0.3em;
 }
-
 div.icon i:hover {
   color: goldenrod;
 }

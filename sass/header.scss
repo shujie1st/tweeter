@@ -2,22 +2,26 @@
 @use "mixins";
 
 header.user {
-  height: 520px;
+  height: 400px;
   width: 100%;
   color: variables.$white;
   @include mixins.align-center;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   margin-bottom: 1em;
   background-color: variables.$header-color;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   
   h2 {
-    margin-top: 10px;
     font-size: 1.8em;
+    margin: 0;
   }
 }
 
 .normal {
   font-weight: normal;
+}
+
+#invisible-block {
+  visibility: hidden;
 }
