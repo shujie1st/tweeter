@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// loops through tweets in reverse chronological order 
+// loops through tweets in reverse chronological order
 // calls createTweetElement for each tweet
 // takes return value and appends it to the tweets container
 const renderTweets = function(tweets) {
@@ -15,7 +15,7 @@ const renderTweets = function(tweets) {
 };
 
 // escape function to use with input text to prevent Cross-Site Scripting
-const escape = function (str) {
+const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
@@ -43,8 +43,8 @@ const createTweetElement = function(tweet) {
   </footer>
 </article>
 `);
-return $tweet;
-}
+  return $tweet;
+};
 
 // Function using AJAX to fetch tweets from the server
 const loadTweets = function() {
@@ -53,7 +53,7 @@ const loadTweets = function() {
     url: "/tweets",
     success: (res) => renderTweets(res),
     error: (err) => console.error(err)
-  })
+  });
 };
 
 $(document).ready(function() {
@@ -64,14 +64,14 @@ $(document).ready(function() {
     $("#tweet-text").focus();
   });
 
-// form submission using JQuery
-$("form").submit((event) => {
+  // form submission using JQuery
+  $("form").submit((event) => {
     event.preventDefault();
 
     // Validate message length before sending the form data to the server
     // Return error message if empty tweet or exceeds the 140 character limit
     // When user submits a new tweet, the error message will slide out of view before validation
-    $("#error").slideUp(500, function () {
+    $("#error").slideUp(500, function() {
       if ($("#tweet-text").val().trim().length === 0) {
         $("#error span").html("Can't send empty message!");
         $("#error").slideDown(500);
@@ -89,15 +89,15 @@ $("form").submit((event) => {
         data: $("form").serialize(),
         success: () => {
           loadTweets(); // refetch tweets on submission
-          $("#tweet-text").val("").trigger("input"); // clear textarea and recount characters after user submits form 
+          $("#tweet-text").val("").trigger("input"); // clear textarea and recount characters after user submits form
         },
         error: (err) => {
           console.error(err);
           $("#error span").html("Send tweet failed!");
           $("#error").slideDown(500);
         }
-      })
-   }); 
+      });
+    });
   });
 });
 
