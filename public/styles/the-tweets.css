@@ -31,6 +31,7 @@
 #the-tweets p {
   padding: 0.5em;
   font-weight: 600;
+  word-break: break-all;
 }
 #the-tweets footer {
   border-top: 4px solid dimgray;
